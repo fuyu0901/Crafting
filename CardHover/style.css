@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.card { 
+    width: 500px;
+    height: auto;
+    transform: 
+        rotateY(calc(-40deg * var(--x) + 20deg))
+        rotateX(calc(-40deg * var(--y) + 20deg));
+}
+.card img {
+    width: 100%;
+}
